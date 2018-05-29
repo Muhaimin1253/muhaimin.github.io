@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab-2</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src = index.js> </script>
+  </head> 
+
+  <body>
+  <div id = "allcontent">
+		
+
+		<div id = "converter">
+			<h1>Convert(wight)</h1>
+			<input id = "myForm" type="text" name="name" id="txt_name" placeholder="0" size="30" maxlength="70">
+
+			<select id="dropdown"  style="height: 40px;font-size:100%;">
+					<option value="1">select</option>
+					<option value="2">kg to lb</option>
+					<option value="3">lb to kg</option>
+				</select>
+
+			<button style="height: 40px;width: 40px;font-size:100%;" onclick="myFunction()">Go</button></p>
+			<p id="result"></p>
+		</div>
+		
+		<div id = "number_series">
+			<span style="font-size:	128%;">Input series of number </span>
+			<input id = "series_p" type="text" name="name" placeholder="1,2,3,.." id="txt_name" size="30" maxlength="70">
+			<button style="height: 40px;width: 40px;font-size:100%;" onclick="seriesFunction()">Go</button></p>
+			
+			<div id = "series_print">
+				<p id="max"></p>
+				<p id="min" ></p>
+				<p id="sum"></p>
+				<p id="average"></p>
+				<p id="reverse"></p>
+			</div>
+		</div>
+		<div id = "textarea">
+			<textarea style="height: 40px; width: 140px;" id="output" rows="20" cols="90"></textarea> </br>
+
+			<input type="button" value="Clear It" onclick="eraseText()">
+			<button type="button" onclick="capitalize()">capitalize</button>
+		</div>
+		<div id = "quote">
+			<div id = "quoteDisplay">
+				<script>
+					newQuote();
+				</script>
+			</div>
+		</div>
+		
+		
+		<div id="footer">
+			
+			<h3>The location of this page is:</h3>
+			<p id="demo"></p>
+			<script>
+				document.getElementById("demo").innerHTML = window.location.href;
+			</script>
+			<h3>This page was last modified on:
+				<script>
+					document.write(document.lastModified);
+				</script>
+			</h3>
+			<h3 style="text-align:center"><a href="#allcontent">Back to Top</a></h3>
+
+		</div>
+	</div>
+  </body>
+</html>
+
